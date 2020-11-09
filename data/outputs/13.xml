@@ -1,24 +1,24 @@
 <?xml version="1.0" ?>
 <doc>
-	<path>D:\PycharmProject\YOLO_V3\data\image\13.jpg</path>
+	<path>D:\PycharmProject\YOLO_V3\data\img\13.jpg</path>
 	<outputs>
 		<object>
 			<item>
 				<name>小熊猫</name>
 				<bndbox>
-					<xmin>34</xmin>
-					<ymin>358</ymin>
-					<xmax>2463</xmax>
-					<ymax>2397</ymax>
+					<xmin>39</xmin>
+					<ymin>115</ymin>
+					<xmax>251</xmax>
+					<ymax>376</ymax>
 				</bndbox>
 			</item>
 		</object>
 	</outputs>
-	<time_labeled>1604896030145</time_labeled>
+	<time_labeled>1604896449727</time_labeled>
 	<labeled>true</labeled>
 	<size>
-		<width>2480</width>
-		<height>2480</height>
+		<width>416</width>
+		<height>416</height>
 		<depth>3</depth>
 	</size>
 </doc>
