@@ -1,0 +1,25 @@
+D:\PycharmProject\YOLO_V3\data\img\1.jpg  0 11 22 203 286 1 212 16 200 293
+D:\PycharmProject\YOLO_V3\data\img\10.jpg  3 70 20 238 240
+D:\PycharmProject\YOLO_V3\data\img\11.jpg  0 39 14 340 263
+D:\PycharmProject\YOLO_V3\data\img\12.jpg  1 41 93 168 116 0 205 10 196 222
+D:\PycharmProject\YOLO_V3\data\img\13.jpg  2 39 115 212 261
+D:\PycharmProject\YOLO_V3\data\img\14.jpg  1 165 99 155 138
+D:\PycharmProject\YOLO_V3\data\img\15.jpg  2 40 46 303 336
+D:\PycharmProject\YOLO_V3\data\img\16.jpg  3 89 39 191 275
+D:\PycharmProject\YOLO_V3\data\img\17.jpg  0 66 4 197 290
+D:\PycharmProject\YOLO_V3\data\img\18.jpg  0 61 25 181 388
+D:\PycharmProject\YOLO_V3\data\img\19.jpg  1 213 75 134 186
+D:\PycharmProject\YOLO_V3\data\img\2.jpg  2 5 183 132 227 0 142 1 153 413 2 228 149 83 263
+D:\PycharmProject\YOLO_V3\data\img\20.jpg  0 8 6 181 231 1 174 66 203 174
+D:\PycharmProject\YOLO_V3\data\img\21.jpg  1 60 3 189 196 1 236 71 180 211
+D:\PycharmProject\YOLO_V3\data\img\22.jpg  1 10 50 205 236 0 221 6 192 281
+D:\PycharmProject\YOLO_V3\data\img\23.jpg  0 7 65 165 210 2 178 109 226 161
+D:\PycharmProject\YOLO_V3\data\img\24.jpg  0 4 15 198 330 1 168 52 242 296
+D:\PycharmProject\YOLO_V3\data\img\25.jpg  2 58 127 156 184 0 180 112 231 210
+D:\PycharmProject\YOLO_V3\data\img\3.jpg  2 6 48 241 271 2 248 122 137 157
+D:\PycharmProject\YOLO_V3\data\img\4.jpg  1 9 43 396 328
+D:\PycharmProject\YOLO_V3\data\img\5.jpg  2 8 60 407 318
+D:\PycharmProject\YOLO_V3\data\img\6.jpg  2 153 6 222 219 0 4 4 144 221
+D:\PycharmProject\YOLO_V3\data\img\7.jpg  3 2 43 358 328
+D:\PycharmProject\YOLO_V3\data\img\8.jpg  3 25 27 153 220 3 158 0 146 188
+D:\PycharmProject\YOLO_V3\data\img\9.jpg  3 209 25 155 303 0 56 4 178 321
