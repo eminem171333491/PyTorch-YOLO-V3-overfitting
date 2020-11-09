@@ -35,15 +35,8 @@ class MyDataset(Dataset):
         strs = line.split()
         # print(os.path.join(IMG_BASE_DIR, strs[0]))
         _img_data = Image.open(os.path.join(IMG_BASE_DIR, strs[0]))
-        w1,h1 = _img_data.size
-        # print(w1,h1)
-        a = np.zeros([max(_img_data.size[0], _img_data.size[1]), max(_img_data.size[0], _img_data.size[1]), 3])  # 以最大边长生成0矩阵
-        img_zero = Image.fromarray(np.uint8(a))  # 0矩阵转为PIL
-        img_zero.paste(_img_data, (0, 0, _img_data.size[0], _img_data.size[1]))  # 将原来的图片贴到0矩阵生成的图片上
-        img = img_zero.resize((416, 416), Image.ANTIALIAS)
-        # w,h = img.size
-        b = 416/max(w1,h1)
-        img_data = transforms(img)
+
+        img_data = transforms(_img_data)
         # img_data = transforms(_img_data)
         # _boxes = np.array(float(x) for x in strs[1:])
         _boxes = np.array(list(map(float, strs[1:])))
@@ -53,10 +46,6 @@ class MyDataset(Dataset):
             labels[feature_size] = np.zeros(shape=(feature_size, feature_size, 3, 5 + cfg.CLASS_NUM))
             for box in boxes:
                 cls, cx, cy, w, h = box
-                cx = cx*b
-                cy = cy*b
-                w = w*b
-                h = w*b
                 cx_offset, cx_index = math.modf(cx * feature_size / cfg.IMG_WIDTH)
                 cy_offset, cy_index = math.modf(cy * feature_size / cfg.IMG_WIDTH)
                 for i, anchor in enumerate(anchors):
@@ -70,7 +59,7 @@ class MyDataset(Dataset):
 if __name__ == '__main__':
     x=one_hot(4,2)
     print(x)
-    LABEL_FILE_PATH = r"data/train_label.txt"
+    LABEL_FILE_PATH = r"data/the_label.txt"
     data = MyDataset(LABEL_FILE_PATH)
     dataloader = DataLoader(data,2,shuffle=True)
     for i,x in enumerate(dataloader):
