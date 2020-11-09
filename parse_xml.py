@@ -8,9 +8,9 @@ classname = {"人类":0,"大熊猫":1,"小熊猫":2,"浣熊":3}
 # print(classname["人"])
 
 txt_path = r"./data/"
-txt = open(txt_path + "train_label.txt", "w",encoding="utf-8")
+txt = open(txt_path + "the_label.txt", "w",encoding="utf-8")
 
-xml_path = r"./data/outputs"
+xml_path = r"./data/img/outputs"
 for xml in os.listdir(xml_path):
     dom = parse(os.path.join(xml_path,xml))
     root = dom.documentElement
@@ -45,11 +45,3 @@ for xml in os.listdir(xml_path):
         print(cls_name,x1,y1,w,h)
         txt.write(" {} {} {} {} {}".format(classname[cls_name], x1, y1, w, h))
     txt.write("\n")
-
-
-
-
-
-
-
-
