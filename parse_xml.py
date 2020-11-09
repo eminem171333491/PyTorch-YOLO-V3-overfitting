@@ -40,8 +40,14 @@ for xml in os.listdir(xml_path):
         y1 = int(box.getElementsByTagName("ymin")[0].childNodes[0].data)
         x2 = int(box.getElementsByTagName("xmax")[0].childNodes[0].data)
         y2 = int(box.getElementsByTagName("ymax")[0].childNodes[0].data)
+        cx = (x1 + x2)*0.5
+        cy = (y1 + y2)*0.5
         w = x2 - x1
         h = y2 - y1
         print(cls_name,x1,y1,w,h)
-        txt.write(" {} {} {} {} {}".format(classname[cls_name], x1, y1, w, h))
+        txt.write(" {} {} {} {} {}".format(classname[cls_name], cx, cy, w, h))
     txt.write("\n")
+
+
+
+
